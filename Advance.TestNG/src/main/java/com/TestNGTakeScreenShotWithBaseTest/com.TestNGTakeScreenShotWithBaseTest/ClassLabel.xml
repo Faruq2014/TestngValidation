@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Faryq2" parallel="classes">
+
+
+<listeners>
+<listener class-name="com.TestNGTakeScreenShotWithBaseTest.Listener2"></listener>
+</listeners>
+
+  <test thread-count="2" name="Test one " parallel="classes">
+    <classes>
+      <class name="com.TestNGTakeScreenShotWithBaseTest.MessangerTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="2" name="Test two" parallel="classes" >
+    <classes>
+      <class name="com.TestNGTakeScreenShotWithBaseTest.RegistrationTest"/>
+    </classes>
+      </test> <!-- Test -->
+      
+</suite> <!-- Faryq2 -->

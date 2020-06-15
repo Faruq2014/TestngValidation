@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Faruq]">
+  <test thread-count="5" name="Test11(failed)">
+    <classes>
+      <class name="com.TestNGTakeScreenShotWithBaseTest.MessangerTest">
+        <methods>
+          <include name="loginButton"/>
+          <include name="skipTest"/>
+          <include name="closeTest"/>
+          <include name="setUpBrowser"/>
+        </methods>
+      </class> <!-- com.TestNGTakeScreenShotWithBaseTest.MessangerTest -->
+      <class name="com.TestNGTakeScreenShotWithBaseTest.RegistrationTest">
+        <methods>
+          <include name="skipTest"/>
+          <include name="loginButton"/>
+          <include name="closeTest"/>
+          <include name="setUpBrowser"/>
+        </methods>
+      </class> <!-- com.TestNGTakeScreenShotWithBaseTest.RegistrationTest -->
+    </classes>
+  </test> <!-- Test11(failed) -->
+</suite> <!-- Failed suite [Faruq] -->

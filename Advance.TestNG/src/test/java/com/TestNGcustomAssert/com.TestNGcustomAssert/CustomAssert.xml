@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CustomAssert">
+  <test  name="login">
+    <classes>
+      <class name="com.TestNGcustomAssert.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="registration">
+    <classes>
+           <class name="com.TestNGcustomAssert.RegistrationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

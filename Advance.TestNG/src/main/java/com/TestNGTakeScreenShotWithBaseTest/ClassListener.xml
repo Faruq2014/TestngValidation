@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite name :Faruq">
+
+<listeners>
+<listener class-name="com.TestNGTakeScreenShotWithBaseTest.Listener2"></listener>
+</listeners>
+
+  <test  name="Test one">
+    <classes>
+      <class name="com.TestNGTakeScreenShotWithBaseTest.MessangerTest"/>
+    
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test Two">
+    <classes>
+    
+      <class name="com.TestNGTakeScreenShotWithBaseTest.RegistrationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
