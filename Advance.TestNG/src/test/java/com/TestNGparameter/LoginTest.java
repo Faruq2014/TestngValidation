@@ -14,7 +14,7 @@ public class LoginTest {
 	
 	@BeforeTest
      @Parameters({"browser","url"})
-	public void setup(String browser,String url) {if (browser.equalsIgnoreCase("chrome")) {
+	public void init(String browser,String url) {if (browser.equalsIgnoreCase("chrome")) {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		System.setProperty("webdriver.chrome.silentOutput","true"); 

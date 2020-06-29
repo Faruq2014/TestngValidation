@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="customreporter">
+
 <listeners>
 <listener class-name="com.TestNGIReporter.CustomReporter"></listener>
 </listeners>
+
   <test name="login">
     <classes>
       <class name="com.TestNGIReporter.LoginTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+
   <test name="registration">
     <classes>
       <class name="com.TestNGIReporter.RegistrationTest"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+
+</suite> 

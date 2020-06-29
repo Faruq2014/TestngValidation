@@ -8,7 +8,7 @@ public class TestListener1 implements ITestListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		System.out.println("Test Started : "+ result.getName());
+		System.out.println("Test Started>>>>>>>>>>>>>>>>>>>>> : "+ result.getName());
 		
 	}
 
@@ -36,13 +36,13 @@ public class TestListener1 implements ITestListener{
 
 	@Override
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
+		System.out.println("  Test started********** : "+ context.getName()+"**************");
 		
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		System.out.println("Test finish********** : "+ context.getName()+"**************");
+		System.out.println(" Test finish********** : "+ context.getName()+"**************");
 		
 	}
 

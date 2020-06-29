@@ -13,6 +13,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class SoccerTest {
 	WebDriver driver;
 	
+	public SoccerTest() {
+	
+	}
+
 	@BeforeMethod
 	public void setup() {
 	WebDriverManager.chromedriver().setup();

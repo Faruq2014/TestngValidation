@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [ListenerPackageLabel]]">
+  <listeners>
+    <listener class-name="com.TestNGiTestListenerPackage.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="smoke(failed)(failed)">
+    <classes>
+      <class name="com.TestNGiTestListenerPackage.RegistrationTest">
+        <methods>
+          <include name="m3"/>
+          <include name="m2"/>
+        </methods>
+      </class> <!-- com.TestNGiTestListenerPackage.RegistrationTest -->
+      <class name="com.TestNGiTestListenerPackage.LoginTest">
+        <methods>
+          <include name="destriy"/>
+          <include name="m3"/>
+          <include name="m2"/>
+        </methods>
+      </class> <!-- com.TestNGiTestListenerPackage.LoginTest -->
+    </classes>
+  </test> <!-- smoke(failed)(failed) -->
+  <test thread-count="5" name="sanity(failed)(failed)">
+    <classes>
+      <class name="com.TestNGiTestListenerPackage.RegistrationTest">
+        <methods>
+          <include name="m3"/>
+          <include name="m2"/>
+        </methods>
+      </class> <!-- com.TestNGiTestListenerPackage.RegistrationTest -->
+      <class name="com.TestNGiTestListenerPackage.LoginTest">
+        <methods>
+          <include name="destriy"/>
+          <include name="m3"/>
+          <include name="m2"/>
+        </methods>
+      </class> <!-- com.TestNGiTestListenerPackage.LoginTest -->
+    </classes>
+  </test> <!-- sanity(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [ListenerPackageLabel]] -->

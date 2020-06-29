@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Factory Annotation">
+	<test name="Factory1" group-by-instances="true" preserve-order="true">
+		<classes>
+			<class name="com.TestNfaqctoryAnnotation.Factory1" />
+		</classes>
+	</test> 
+</suite> 

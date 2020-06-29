@@ -8,7 +8,7 @@ public class Listener2 extends BaseTest implements ITestListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		System.out.println(result.getMethod().getMethodName()+" : Test starteing");
+		System.out.println(result.getMethod().getMethodName()+" :>>>>>>>Test starteing");
 		
 	}
 

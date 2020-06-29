@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGhardAssertion.AssertWithTryCatch">
+      <class name="com.TestNGDataProviderExcel.DataProviderWithExcel">
         <methods>
-          <include name="testOne"/>
-          <include name="setUP"/>
+          <include name="init"/>
+          <include name="LoginTest"/>
+          <include name="Destroyable"/>
         </methods>
-      </class> <!-- com.TestNGhardAssertion.AssertWithTryCatch -->
+      </class> <!-- com.TestNGDataProviderExcel.DataProviderWithExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="ListenerClass">
+
 <listeners>
 <listener class-name="com.TestNGiTestListenerPackage.TestListener"></listener>
 </listeners>
-  <test  name="Test">
+
+  <test  name="LoginTest">
     <classes>
       <class name="com.TestNGiTestListenerPackage.LoginTest"/>
     </classes>
   </test> <!-- Test -->
+  
+   <test  name="RegistrationTest">
+    <classes>
+      <class name="com.TestNGiTestListenerPackage.RegistrationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
 </suite> <!-- Suite -->

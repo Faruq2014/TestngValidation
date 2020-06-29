@@ -6,11 +6,11 @@ import org.testng.ITestResult;
 public class RetryAnalyzer implements IRetryAnalyzer{
 
 	int counter=0;
-	int restryLimit=3;
+	int retryLimit=3;
 	
 	@Override
 	public boolean retry(ITestResult result) {
-		if (counter<restryLimit) {
+		if (counter<retryLimit) {
 		counter++;
 		return true;
 		}

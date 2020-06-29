@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.TestNGIReporter.LoginTest">
+      <class name="com.TestNfaqctoryAnnotation.FactoryWithConstructor">
         <methods>
-          <include name="test4"/>
-          <include name="test3"/>
+          <include name="LoginTest"/>
+          <include name="Destroyable"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- com.TestNGIReporter.LoginTest -->
+      </class> <!-- com.TestNfaqctoryAnnotation.FactoryWithConstructor -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
