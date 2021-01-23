@@ -1,53 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34915" started-at="2020-06-28T22:06:36Z" finished-at="2020-06-28T22:07:11Z">
+  <suite name=" smoke Suite" duration-ms="19758" started-at="2021-01-23T05:20:29Z" finished-at="2021-01-23T05:20:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34915" started-at="2020-06-28T22:06:36Z" finished-at="2020-06-28T22:07:11Z">
-      <class name="com.TestNGDataProviderExcelLoop.ReadAnyData">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.TestNGDataProviderExcelLoop.ReadAnyData@5622fdf]" name="init" is-config="true" duration-ms="11151" started-at="2020-06-28T22:06:36Z" finished-at="2020-06-28T22:06:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.TestNGDataProviderExcelLoop.ReadAnyData@5622fdf]" name="LoginTest" duration-ms="7343" started-at="2020-06-28T22:06:49Z" data-provider="getLoginData" finished-at="2020-06-28T22:06:56Z">
+    <test name=" Espanol Test" duration-ms="15915" started-at="2021-01-23T05:20:29Z" finished-at="2021-01-23T05:20:45Z">
+      <class name="com.TestNGParallelWithSingleTonWithBaseTest.EspanolTest">
+        <test-method status="PASS" signature="setUpBrowser(java.lang.String)[pri:0, instance:com.TestNGParallelWithSingleTonWithBaseTest.EspanolTest@b62fe6d]" name="setUpBrowser" is-config="true" duration-ms="10197" started-at="2021-01-23T05:20:29Z" finished-at="2021-01-23T05:20:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[khaled]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234.0]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.TestNGDataProviderExcelLoop.ReadAnyData@5622fdf]" name="LoginTest" duration-ms="14027" started-at="2020-06-28T22:06:56Z" data-provider="getLoginData" finished-at="2020-06-28T22:07:10Z">
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="EspanolLanguageTest()[pri:0, instance:com.TestNGParallelWithSingleTonWithBaseTest.EspanolTest@b62fe6d]" name="EspanolLanguageTest" duration-ms="4237" started-at="2021-01-23T05:20:39Z" finished-at="2021-01-23T05:20:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EspanolLanguageTest -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:com.TestNGParallelWithSingleTonWithBaseTest.EspanolTest@b62fe6d]" name="tearDownTest" is-config="true" duration-ms="1345" started-at="2021-01-23T05:20:43Z" finished-at="2021-01-23T05:20:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.TestNGParallelWithSingleTonWithBaseTest.EspanolTest -->
+    </test> <!--  Espanol Test -->
+    <test name="English Test" duration-ms="19715" started-at="2021-01-23T05:20:29Z" finished-at="2021-01-23T05:20:49Z">
+      <class name="com.TestNGParallelWithSingleTonWithBaseTest.EnglishTest">
+        <test-method status="PASS" signature="setUpBrowser(java.lang.String)[pri:0, instance:com.TestNGParallelWithSingleTonWithBaseTest.EnglishTest@15761df8]" name="setUpBrowser" is-config="true" duration-ms="14689" started-at="2021-01-23T05:20:29Z" finished-at="2021-01-23T05:20:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1234.0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[arif]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="Destroyable()[pri:0, instance:com.TestNGDataProviderExcelLoop.ReadAnyData@5622fdf]" name="Destroyable" is-config="true" duration-ms="814" started-at="2020-06-28T22:07:10Z" finished-at="2020-06-28T22:07:11Z">
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="userPassword()[pri:0, instance:com.TestNGParallelWithSingleTonWithBaseTest.EnglishTest@15761df8]" name="userPassword" duration-ms="3771" started-at="2021-01-23T05:20:44Z" finished-at="2021-01-23T05:20:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Destroyable -->
-      </class> <!-- com.TestNGDataProviderExcelLoop.ReadAnyData -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- userPassword -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:com.TestNGParallelWithSingleTonWithBaseTest.EnglishTest@15761df8]" name="tearDownTest" is-config="true" duration-ms="1244" started-at="2021-01-23T05:20:47Z" finished-at="2021-01-23T05:20:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.TestNGParallelWithSingleTonWithBaseTest.EnglishTest -->
+    </test> <!-- English Test -->
+    <test name="login Test" duration-ms="19758" started-at="2021-01-23T05:20:29Z" finished-at="2021-01-23T05:20:49Z">
+      <class name="com.TestNGParallelWithSingleTonWithBaseTest.LoginTest">
+        <test-method status="PASS" signature="setUpBrowser(java.lang.String)[pri:0, instance:com.TestNGParallelWithSingleTonWithBaseTest.LoginTest@1d548a08]" name="setUpBrowser" is-config="true" duration-ms="14992" started-at="2021-01-23T05:20:29Z" finished-at="2021-01-23T05:20:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="windowHandleTest()[pri:0, instance:com.TestNGParallelWithSingleTonWithBaseTest.LoginTest@1d548a08]" name="windowHandleTest" duration-ms="3843" started-at="2021-01-23T05:20:44Z" finished-at="2021-01-23T05:20:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowHandleTest -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:com.TestNGParallelWithSingleTonWithBaseTest.LoginTest@1d548a08]" name="tearDownTest" is-config="true" duration-ms="916" started-at="2021-01-23T05:20:48Z" finished-at="2021-01-23T05:20:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.TestNGParallelWithSingleTonWithBaseTest.LoginTest -->
+    </test> <!-- login Test -->
+  </suite> <!--  smoke Suite -->
 </testng-results>

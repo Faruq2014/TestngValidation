@@ -21,9 +21,9 @@
 				file = new FileInputStream("./excel/data.xlsx");
 			} catch (Exception e) {
 			}
+
 			try {
-	
-				book = WorkbookFactory.create(file);
+					book = WorkbookFactory.create(file);
 			} catch (Exception e) {
 				// TODO: handle exception
 			}

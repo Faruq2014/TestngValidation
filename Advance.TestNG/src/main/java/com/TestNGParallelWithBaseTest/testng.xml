@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- you can put parallel and Thread count test level or suite level, out come is same -->
+
+<!--  <suite thread-count="4" name="Smoke Suite" parallel="methods">-->
+
+<suite thread-count="4" name="Smoke Suite" parallel="methods">
+ <!--  <suite  name="Smoke Suite" >-->
+  <!-- <test thread-count="4" name="Smoke Test" parallel="methods"> -->
+  <test  name="Smoke Test">
+    <classes>
+      <class name="com.TestNGParallelWithBaseTest.ParallelAndThreadCount"/>
+      <class name="com.TestNGParallelWithBaseTest.Parallel"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
