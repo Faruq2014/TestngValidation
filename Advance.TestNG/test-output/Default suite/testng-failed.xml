@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGParallelWithSingleTonWithBaseTest.LoginTest">
+      <class name="com.TestNGAnnotationParameters.Parameter">
         <methods>
-          <include name="userPassword"/>
-          <include name="userName"/>
-          <include name="setUpBrowser"/>
+          <include name="openApp"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.TestNGParallelWithSingleTonWithBaseTest.LoginTest -->
+      </class> <!-- com.TestNGAnnotationParameters.Parameter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [ smoke Suite]" parallel="tests">
-  <test thread-count="3" name="English Test(failed)" parallel="tests">
-    <parameter name="browser" value="Chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="userName" value="Nahida"/>
     <classes>
-      <class name="com.TestNGParallelWithSingleTonWithBaseTest.EnglishTest">
+      <class name="com.TestNGAnnotationParameters.Parameter">
         <methods>
-          <include name="tearDownTest"/>
-          <include name="userPassword"/>
-          <include name="setUpBrowser"/>
+          <include name="openApp"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.TestNGParallelWithSingleTonWithBaseTest.EnglishTest -->
+      </class> <!-- com.TestNGAnnotationParameters.Parameter -->
     </classes>
-  </test> <!-- English Test(failed) -->
-</suite> <!-- Failed suite [ smoke Suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
