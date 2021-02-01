@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke Suite]">
+  <listeners>
+    <listener class-name="com.TestNGiTestListenerPackage.AssuranceLitener"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="com.TestNGiTestListenerPackage.AssuranceTests">
+        <methods>
+          <include name="test2"/>
+          <include name="test5"/>
+        </methods>
+      </class> <!-- com.TestNGiTestListenerPackage.AssuranceTests -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="com.TestNGiTestListenerPackage.AssuranceTests2">
+        <methods>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="test6"/>
+        </methods>
+      </class> <!-- com.TestNGiTestListenerPackage.AssuranceTests2 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->

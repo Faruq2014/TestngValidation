@@ -31,7 +31,7 @@ public class DataProviderWithCSV {
 		driver.get("https://www.facebook.com/");
 		driver.findElement(By.id("email")).sendKeys(username);
 		driver.findElement(By.id("pass")).sendKeys(password);
-		driver.findElement(By.id("loginbutton")).click();
+		driver.findElement(By.id("u_0_b")).click();
 		Thread.sleep(2000);
 	}
 
@@ -41,24 +41,24 @@ public class DataProviderWithCSV {
 	}
 
 	@DataProvider(name = "loginData")
-	public Object[] getData() {
-		Object[] pData = testData();
+	public Object[][] getData() {
+		Object[][] pData = testData();
 		return  pData;
 	}
 
 	
 	@Test
-	public String[] testData() {
+	public Object[][] testData() {
 		String path="./excel/data.csv.txt";
 		String line="";
-		String [] data = null;
+		Object[][] data = null;
 		int row;
 		try {
 			BufferedReader bReader=new BufferedReader(new FileReader(path));
 			
 			while ((line=bReader.readLine()) !=null) {
 			System.out.println(line);
-			   data = line.split(",");
+			  // data = line.split(",");
 			//System.out.println(data[2]);
 		 //row=data.length;
 		//System.out.println(row);

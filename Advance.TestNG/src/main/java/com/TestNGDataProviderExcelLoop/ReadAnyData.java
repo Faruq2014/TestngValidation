@@ -34,7 +34,7 @@ public class ReadAnyData {
 		driver.get("https://www.facebook.com/");
 		driver.findElement(By.id("email")).sendKeys(username);
 		driver.findElement(By.id("pass")).sendKeys(password);
-		driver.findElement(By.id("loginbutton")).click();
+		driver.findElement(By.id("u_0_b")).click();
 		Thread.sleep(2000);
 	}
 	

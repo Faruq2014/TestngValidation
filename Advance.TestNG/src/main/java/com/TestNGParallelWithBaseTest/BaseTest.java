@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	protected ThreadLocal<ChromeDriver> driver = new ThreadLocal<>();
+	public ThreadLocal<ChromeDriver> driver = new ThreadLocal<>();
    @BeforeMethod
 	public void setUp() {
 	  WebDriverManager.chromedriver().setup();

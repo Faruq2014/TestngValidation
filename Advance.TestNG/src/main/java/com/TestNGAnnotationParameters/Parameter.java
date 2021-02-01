@@ -18,6 +18,7 @@ public class Parameter {
 	
 	WebDriver driver=null;
 	
+	
 	@BeforeTest
 	@Parameters({"browser"})
 	public void openApp(String browser) {

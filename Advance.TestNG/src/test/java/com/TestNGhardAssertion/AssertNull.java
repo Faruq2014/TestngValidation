@@ -11,12 +11,16 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AssertNull {
-
+	/*this method is very usefull to see if driver is null or not 
+	 * think about you are middle of the frame work, and you need to know is driver 
+	 * is fetching from the base test. 
+	 * 
+	 */
 	WebDriver driver=null;
 	String name;
 	int id =2;
 
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	public void CheckVariable() {
 		Assert.assertNull(name, "not null");
 		System.out.println("name is null – Assert passed");
@@ -24,14 +28,14 @@ public class AssertNull {
 		System.out.println("id is not null – Assert Not Null  passed");
 	}
 
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	public void driverNull() {
 
 		Assert.assertNull(driver);
 		System.out.println("Driver is null – Assert passed");
 	}
 
-	//@Test(priority = 3)
+	@Test(priority = 3)
 	public void driverNotNull() throws InterruptedException {
 		// WebDriver driver=null;
 		WebDriverManager.chromiumdriver().setup();
@@ -43,14 +47,17 @@ public class AssertNull {
 		System.out.println("Driver is not null – Assert passed");
 		driver.quit();
 	}
-	
+
 	@Test(priority = 4)
 	public void checkAttributes() throws InterruptedException {
-		 //WebDriver driver=null;
+		//WebDriver driver=null;
+		
 		WebDriverManager.chromiumdriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		System.setProperty("webdriver.chrome.silentOutput", "true");
-		System.setProperty("webdriver.chrome.args", "--disable-logging");
+		//this is chrome options is a subclass of desired capabilities 
+		
+		System.setProperty("webdriver.chrome.silentOutput", "true"); // 
+		System.setProperty("webdriver.chrome.args", "--disable-logging"); // no loging info 
 		driver = new ChromeDriver(options);
 		driver.get("https://www.gmail.com/");
 		driver.findElement(By.xpath("//*[@id='identifierNext']")).click();

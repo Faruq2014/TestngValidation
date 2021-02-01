@@ -8,6 +8,7 @@
 	 */
 	public class DriverThread {
 		
+		
 		private DriverThread() {
 			
 		}
@@ -18,7 +19,10 @@
 		return instance;	
 	}
 	
+	
+	
 	ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+	
 	public WebDriver getDriver() {
 		return driver.get();	
 	}
@@ -26,6 +30,9 @@
 	public void setDriver(WebDriver driverP) {
 		driver.set(driverP);
 	}
+	
+	
+	
 	
 	public void removeDriver() {
 		driver.get().quit();

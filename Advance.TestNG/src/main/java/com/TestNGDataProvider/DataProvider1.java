@@ -35,7 +35,7 @@ import org.testng.*;
 			driver.get("https://www.facebook.com/");
 			driver.findElement(By.id("email")).sendKeys(username);
 			driver.findElement(By.id("pass")).sendKeys(password);
-			driver.findElement(By.id("loginbutton")).click();
+			driver.findElement(By.name("login")).click();
 			Thread.sleep(2000);
 			System.out.println("this is log in test");
 		}
@@ -46,13 +46,16 @@ import org.testng.*;
 		
 	  // @DataProvider
 		public Object[][] getData() {
-			Object[][] pData =new Object[2][2];
+			Object[][] pData =new Object[3][2];
 			
-			pData[0][0]="user1";
+			pData[0][0]="Shahin";
 			pData[0][1]="1234";
 			
-			pData[1][0]="user2";
+			pData[1][0]="Nahida";
 			pData[1][1]="456";
+			
+			pData[2][0]="Nahida";
+			pData[2][1]="456";
 			
 			
 			return pData;
@@ -70,7 +73,7 @@ import org.testng.*;
 	    
 		@AfterTest
 		public void Destroyable() {
-			// driver.quit();
+			 driver.quit();
 		}
 	
 	

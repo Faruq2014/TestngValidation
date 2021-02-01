@@ -17,7 +17,8 @@ public class Practice {
 	public void test() throws InterruptedException {
 
 		String expectedTitle = "Google";
-		String expectedText = "selenium - Google Search";
+		
+
 		WebDriverManager.chromiumdriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		System.setProperty("webdriver.chrome.silentOutput", "true");
@@ -25,25 +26,27 @@ public class Practice {
 		driver = new ChromeDriver(options);
 		driver.get("https://www.google.com");
 
-// Validate if actual web page title matches with that of expected title using assert true method
+		// Validate if actual web page title matches with that of expected title using assert true method
 		System.out.println("Assert true method validation");
 		Assert.assertTrue(expectedTitle.equals(driver.getTitle()));
 
-// Enter the keyword selenium on the search textbox
+		// Enter the keyword selenium on the search textbox
 		WebElement searchBox = driver.findElement(By.xpath("//*[@name='q']"));
 		searchBox.sendKeys("selenium");
 		searchBox.sendKeys(Keys.ENTER);
 		Thread.sleep(8000);
-
-// Validate the actual page title with expected page title using assert equals method
+		
+		String secondPageTitle = "selenium - Google Search";
+		// Validate the actual page title with expected page title using assert equals method
 		System.out.println("Assert equals method validation");
-		Assert.assertEquals(expectedText, driver.getTitle());
+		System.out.println(" second page title: "+driver.getTitle());
+		Assert.assertEquals(secondPageTitle, driver.getTitle());
 
-// Page title validation using assert false method
+		// Page title validation using assert false method
 		System.out.println("Assert false method validation");
 		Assert.assertFalse(expectedTitle.equals(driver.getTitle()));
 
-// Close the current browser
+		// Close the current browser
 		driver.close();
 	}
 }

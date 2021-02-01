@@ -33,7 +33,7 @@ import org.testng.*;
 			driver.get("https://www.facebook.com/");
 			driver.findElement(By.id("email")).sendKeys(username);
 			driver.findElement(By.id("pass")).sendKeys(password);
-			driver.findElement(By.id("loginbutton")).click();
+			driver.findElement(By.id("u_0_b")).click();
 			Thread.sleep(2000);
 			System.out.println("this is facebook test");
 		}
@@ -54,16 +54,13 @@ import org.testng.*;
 		public void SFloginTest(String username, String password) {
 			System.out.println("this is salesforce  test");
 			driver.get("https://www.salesforce.com/");
-			driver.findElement(By.xpath("//div[@class='global-nav-login-flydown global-login']/div/div/a")).click();
+			driver.findElement(By.xpath("//*[@class='dropdown']/a")).click();
 			driver.findElement(By.cssSelector("[type='email']")).sendKeys(username);
 			driver.findElement(By.cssSelector("[name='pw'][type='password']")).sendKeys(password);
 			driver.findElement(By.cssSelector("[id^='forgot_password']")).click();
 	    
 	    }
-	    
-	 
-	    
-		@AfterTest
+	  	@AfterTest
 		public void Destroyable() {
 			 driver.quit();
 		}
